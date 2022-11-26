@@ -1,17 +1,15 @@
 import torch
-import os
-import pandas as pd
-import torch
 import torch.nn as nn
-from torch.utils.data import Dataset
+from torch.utils.data import dataset
 from torch.utils.data import DataLoader
 import torch
 
 class data_loader:
 
     # tensor[0:,1] = 4 to accses and sets: specific value 
-    def accuracy(model,test_loader, batch_size: int):
+    def accuracy(model,test_loader):
         sum_acc= 0
+        #map labels with 0,1,2
         def transform_label(label_data):
             data = []
             for i in label_data:
@@ -29,7 +27,7 @@ class data_loader:
 #                final_tensor = torch.zeros(1,3)
 #                final_tensor[0:,i] = 1
 #                list_tensors.append(final_tensor)
-#            return torch.cat(list_tensors)
+#            return torch.cat(list_tensors:)
 #
         for i,(X_test, test_labels) in enumerate(test_loader):
             test_labels = transform_label(test_labels)
