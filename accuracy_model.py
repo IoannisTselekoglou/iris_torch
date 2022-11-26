@@ -46,5 +46,5 @@ class data_loader:
             accuracy_per_epoch = (number_pred/len(X_test))*100
             print(f"accuracy batch {i}:\n{accuracy_per_epoch}%")
             sum_acc += accuracy_per_epoch
-        return print(f"\ntotal accuracy of model {(summe/len(test_loader)):.2f}%")
+        return print(f"\ntotal accuracy of model {(sum_acc/len(test_loader)):.2f}%")
 
