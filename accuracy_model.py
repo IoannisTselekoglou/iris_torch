@@ -1,29 +1,36 @@
+import torch
+import os
+import pandas as pd
+import torch
+import torch.nn as nn
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
+import torch
 
 class data_loader:
 
-    def transform_label(label_data):
-        data = []
-        for i in label_data:
-            if i == "Iris-setosa":
-                data.append(torch.tensor([1,0,0], dtype=torch.float32))
-            elif i == "Iris-versicolor": 
-                data.append(torch.tensor([0,1,0], dtype=torch.float32))
-            else:
-                data.append(torch.tensor([0,0,1], dtype=torch.float32))
-        return torch.stack(data)
-
-    def final_x(x_hat):
-        list_tensors = []
-        for i in x_hat:
-            final_tensor = torch.zeros(1,3)
-            final_tensor[0:,i] = 1
-            list_tensors.append(final_tensor)
-        return torch.cat(list_tensors)
-
     # tensor[0:,1] = 4 to accses specific value 
     def accuracy(model, test_dataset, batch_size: int):
+        summe = 0
+        def transform_label(label_data):
+            data = []
+            for i in label_data:
+                if i == "Iris-setosa":
+                    data.append(torch.tensor([1,0,0], dtype=torch.float32))
+                elif i == "Iris-versicolor": 
+                    data.append(torch.tensor([0,1,0], dtype=torch.float32))
+                else:
+                    data.append(torch.tensor([0,0,1], dtype=torch.float32))
+            return torch.stack(data)
+
+        def final_x(x_hat):
+            list_tensors = []
+            for i in x_hat:
+                final_tensor = torch.zeros(1,3)
+                final_tensor[0:,i] = 1
+                list_tensors.append(final_tensor)
+            return torch.cat(list_tensors)
+
         test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
         for i,(X_test, test_labels) in enumerate(test_loader):
             test_labels = transform_label(test_labels)
