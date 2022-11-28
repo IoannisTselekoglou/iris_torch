@@ -21,14 +21,6 @@ class data_loader:
                     data.append(torch.tensor([2]))
             return torch.stack(data)
 
-#        def final_x(x_hat):
-#            list_tensors = []
-#            for i in x_hat:
-#                final_tensor = torch.zeros(1,3)
-#                final_tensor[0:,i] = 1
-#                list_tensors.append(final_tensor)
-#            return torch.cat(list_tensors:)
-#
         for i,(X_test, test_labels) in enumerate(test_loader):
             test_labels = transform_label(test_labels)
             x_label_pre = model(X_test)
@@ -37,12 +29,14 @@ class data_loader:
             number_pred = 0
             counter = 0
             #print(model_prediction, test_labels)
-            while idx < len(X_test):
-                if x_label_pre_hat[idx].item() == test_labels[idx].item():
-                    number_pred += 1
-                idx +=1
-            accuracy_per_epoch = (number_pred/len(X_test))*100
-            print(f"accuracy batch {i}:\n{accuracy_per_epoch}%")
+            with torch.no_grad():
+                model.eval()
+                while idx < len(X_test):
+                    if x_label_pre_hat[idx].item() == test_labels[idx].item():
+                        number_pred += 1
+                    idx +=1
+                accuracy_per_epoch = (number_pred/len(X_test))*100
+                print(f"accuracy batch {i}:\n{(accuracy_per_epoch):.2f}%")
             sum_acc += accuracy_per_epoch
         return print(f"\ntotal accuracy of model {(sum_acc/len(test_loader)):.2f}%")
 
