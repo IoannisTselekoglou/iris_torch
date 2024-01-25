@@ -24,5 +24,5 @@ To get started with Iriis Torch, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Iriis-Torch.git
+   git clone https://github.com/IoannisTselekoglou/Iriis-Torch.git
    cd Iriis-Torch
