@@ -1,38 +1,28 @@
-# Linear Regression 
+# Iriis Torch - Iris Flower Classification
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+## Overview
 
-## Table of Contents
+Welcome to Iriis Torch, a Python project that leverages PyTorch for iris flower classification. This project includes a dataset, a model for iris flower classification, a data loader, and a Jupyter notebook for analysis and visualization.
 
-- [Introduction](#introduction)
-- [Explanation](#explanation)
-- [Examples](#examples)
-- [Testing](#testing)
-- [License](#license)
+## Contents
 
-## Introduction
+1. **Dataset**
+   - The dataset for this project contains information about iris flowers. It includes features such as sepal length, sepal width, petal length, and petal width, along with the corresponding labels indicating the species of the iris flower.
 
-This Python project implements Linear Regression algorithms from scratch. The primary goal is to offer a clear and comprehensible implementation of these fundamental machine learning algorithms. It serves as a valuable resource for educational purposes or as a launching point for further research.
+2. **Accuracy Model**
+   - The `accuracy_model.py` file implements a function to calculate the accuracy of the trained model. This is crucial for evaluating the performance of the classification model on the given dataset.
 
-## Explanation
+3. **Data Loader**
+   - The `dataloader_torch.py` script provides functionality to load and preprocess the iris flower dataset. It uses PyTorch's data loading utilities to create batches of data for training and testing the model.
 
-### Linear Regression
+4. **Iris Notebook**
+   - The `iris_notebook.ipynb` Jupyter notebook is a comprehensive document that walks through the entire process of loading data, training the model, and evaluating its performance. It also includes visualizations and analysis of the results to provide insights into the iris flower classification task.
 
-Linear Regression is a supervised learning algorithm designed for predicting continuous target values based on input features. Its objective is to identify the best-fit straight line that minimizes the sum of squared errors between predicted and actual values.
+## Usage
 
-## Examples
+To get started with Iriis Torch, follow these steps:
 
-To illustrate the usage of the implemented algorithms, we provide the following examples:
-
-- [example1.py](examples/example1.py): Demonstrates Linear Regression applied to a synthetic dataset.
-
-Feel free to explore and run these examples to gain insights into how the algorithms perform under different scenarios.
-
-## Testing
-
-Unit tests are crucial for ensuring the correctness of our implementations. We have included comprehensive test suites for both the Linear Regression and Gradient Descent algorithms.
-
-To run the tests, use the following command:
-
-```bash
-$ python -m unittest discover tests
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Iriis-Torch.git
+   cd Iriis-Torch
