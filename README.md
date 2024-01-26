@@ -53,9 +53,7 @@ The iris_notebook.ipynb Jupyter notebook is a walks you through the entire proce
 4. Run Jupyter Notebook. 
 
 ## License
-
-- [NumPy](https://numpy.org): A library for numerical computing in Python. License: [BSD 3-Clause License](licenses/LICENSE-numpy.txt).
-- [Matplotlib](https://matplotlib.org): A plotting library for Python. License: [Matplotlib License](licenses/LICENSE-matplotlib.txt).
-
+- [NumPy](https://numpy.org): A open-source library for numerical computing in Python.
+- [Matplotlib](https://matplotlib.org): A open-source plotting library for Python. License.
 
 
