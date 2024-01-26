@@ -1,28 +1,47 @@
-# Iriis Torch - Iris Flower Classification
+# Tayler_approximation
 
-## Overview
+This Python script plots the Taylor polynomial of sin(x) for a given number of terms and compares it to the actual sin(x) function.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Data set](#Data set)
+- [Model Training](model-training))
+- [Installation](#installation)
+- [Examples](#examples)
+- [License](#license)
+
+## Introduction
 
 Welcome to Iriis Torch, a Python project that leverages PyTorch for iris flower classification. This project includes a dataset, a model for iris flower classification, a data loader, and a Jupyter notebook for analysis and visualization.
 
-## Contents
+## Data set
 
-1. **Dataset**
-   - The dataset for this project contains information about iris flowers. It includes features such as sepal length, sepal width, petal length, and petal width, along with the corresponding labels indicating the species of the iris flower.
+The dataset for this project contains information about iris flowers. It includes features such as sepal length, sepal width, petal length, and petal width, along with the corresponding labels indicating the species of the iris flower.
 
-2. **Accuracy Model**
-   - The `accuracy_model.py` file implements a function to calculate the accuracy of the trained model. This is crucial for evaluating the performance of the classification model on the given dataset.
 
-3. **Data Loader**
-   - The `dataloader_torch.py` script provides functionality to load and preprocess the iris flower dataset. It uses PyTorch's data loading utilities to create batches of data for training and testing the model.
+## Data set
 
-4. **Iris Notebook**
-   - The `iris_notebook.ipynb` Jupyter notebook is a comprehensive document that walks through the entire process of loading data, training the model, and evaluating its performance. It also includes visualizations and analysis of the results to provide insights into the iris flower classification task.
+## Model training
 
-## Usage
 
-To get started with Iriis Torch, follow these steps:
+## Example 
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/IoannisTselekoglou/Iriis-Torch.git
-   cd Iriis-Torch
+The iris_notebook.ipynb Jupyter notebook is a comprehensive document that walks through the entire process of loading data, training the model, and evaluating its performance. It also includes visualizations and analysis of the results to provide insights into the iris flower classification task.
+
+## Installation
+
+1. Clone this repository.
+2. Install the required dependencies using pip:
+    - pip install matplotlib
+    - pip install numpy 
+
+
+## License
+
+- [NumPy](https://numpy.org): A library for numerical computing in Python. License: [BSD 3-Clause License](licenses/LICENSE-numpy.txt).
+
+- [Matplotlib](https://matplotlib.org): A plotting library for Python. License: [Matplotlib License](licenses/LICENSE-matplotlib.txt).
+
+
+
