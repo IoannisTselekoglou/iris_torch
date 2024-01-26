@@ -5,7 +5,7 @@ This Python script plots the Taylor polynomial of sin(x) for a given number of t
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Data set](#Data set)
+- [Dataset](#Dataset)
 - [Model Training](model-training))
 - [Installation](#installation)
 - [Examples](#examples)
