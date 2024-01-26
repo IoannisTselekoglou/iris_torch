@@ -11,7 +11,7 @@
 
 ## Introduction
 
-Welcome to Iriis Torch, a project using PyTorch for iris flower classification. This project includes a dataset, a model for iris flower classification and a Jupyter notebook for analysis and visualization.
+Welcome to Iriis Torch, a project using PyTorch for iris species classification. This project includes a dataset, a model for iris flower classification and a Jupyter notebook for analysis and visualization.
 
 ## Data set
 
