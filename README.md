@@ -32,11 +32,11 @@ The iris_notebook.ipynb Jupyter notebook is a comprehensive document that walks 
 
 1. Clone this repository.
 2. Download Dataset.
-2. Install the required dependencies using pip:
+3. Install the required dependencies using pip:
     ```bash
     - pip install matplotlib
     - pip install numpy 
-
+4. Run Jupyter Notebook. 
 
 ## License
 
