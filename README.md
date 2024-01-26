@@ -6,23 +6,22 @@ This Python script plots the Taylor polynomial of sin(x) for a given number of t
 
 - [Introduction](#introduction)
 - [Dataset](#Dataset)
-- [Model Training](model-training))
+- [Model](model)
 - [Installation](#installation)
 - [Examples](#examples)
 - [License](#license)
 
 ## Introduction
 
-Welcome to Iriis Torch, a Python project that leverages PyTorch for iris flower classification. This project includes a dataset, a model for iris flower classification, a data loader, and a Jupyter notebook for analysis and visualization.
+Welcome to Iriis Torch, a Python project that leverages PyTorch for iris flower classification. This project includes a dataset, a model for iris flower classification and a Jupyter notebook for analysis and visualization.
 
 ## Data set
 
 The dataset for this project contains information about iris flowers. It includes features such as sepal length, sepal width, petal length, and petal width, along with the corresponding labels indicating the species of the iris flower.
 
 
-## Data set
-
-## Model training
+## Model 
+We use a very simple Neuralnetwork. 
 
 
 ## Example 
@@ -32,7 +31,9 @@ The iris_notebook.ipynb Jupyter notebook is a comprehensive document that walks 
 ## Installation
 
 1. Clone this repository.
+2. Download Dataset.
 2. Install the required dependencies using pip:
+    ```bash
     - pip install matplotlib
     - pip install numpy 
 
