@@ -1,6 +1,4 @@
-# Tayler_approximation
-
-This Python script plots the Taylor polynomial of sin(x) for a given number of terms and compares it to the actual sin(x) function.
+# Iris Classifcation
 
 ## Table of Contents
 
@@ -24,7 +22,20 @@ The dataset for this project contains information about iris flowers. It include
 
 ## Model 
 
-We use a very simple Neuralnetwork. Containing only a few layers.
+The implemented model is a very simple neural network. The model is implemented using the `NeuralNetwork` class.
+
+### Model Layers
+1. **Input Layer:** 4 nodes
+   - Input features: SepalLengthCm, SepalWidthCm, PetalLengthCm, PetalWidthCm
+
+2. **Hidden Layer 1:** 
+   - Architecture: Linear layer with 128 nodes and ReLU activation function
+
+3. **Hidden Layer 2:** 
+   - Architecture: Linear layer with 64 nodes and ReLU activation function
+
+4. **Output Layer:** 3 nodes
+   - Output categories: Iris species
 
 
 ## Example 
